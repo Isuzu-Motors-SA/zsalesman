@@ -1,0 +1,259 @@
+/* Enter your custom styles here */
+/* Style the table header cell */
+.sapFCard .sapFCardHeader .sapFCardIcon.sapFAvatar .sapUiIcon {
+    align-self: center !important;
+    font-size: 2rem !important;
+    color: #bb0000 !important;
+}
+
+
+
+.sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
+    margin: 0;
+    display: block !important;
+    font-family: "72","72full",Arial,Helvetica,sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    color: #e31b23 !important;
+    min-height: 1rem !important;
+}
+/* For the title text in the header */
+.sapMListTblHeaderCell {
+    font-weight: bold !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    font-size: 15px !important;
+    box-sizing: border-box !important;
+    max-width: 160px !important;
+    /* Optional: limit width */
+    white-space: nowrap !important;
+    /* Prevent wrapping */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Header text styles */
+.sapMColumnHeader .sapMLabel,
+.sapMColumnHeader .sapMText {
+    font-weight: bold !important;
+    font-size: 15px !important;
+}
+
+
+
+@media print {
+
+    #detailsPage,
+    #_IDGenButton {
+        display: none !important;
+    }
+
+    /* Optional: also hide the page header or any toolbars */
+    .sapMPageHeader {
+        display: none !important;
+    }
+}
+
+.columnHeaderHover {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out, border 0.2s;
+    border: 2px solid transparent;
+    /* Default no border */
+}
+
+.columnHeaderHover:hover {
+    transform: scale(1.1);
+    border: 1px solid black;
+    /* Black box on hover */
+    border-radius: 4px;
+    /* Optional: rounded corners */
+    cursor: pointer;
+}
+
+.cardSpacing {
+    margin-bottom: 16px;
+    /* Adjust as needed */
+}
+
+.hoverEffect:hover {
+    transform: scale(0.99, 0.99);
+}
+
+.attributeBox {
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* small vertical spacing between rows */
+}
+
+.attributeRow {
+    align-items: baseline;
+}
+
+.attributeLabel {
+    font-weight: bold;
+    font-size: 14px;
+    /* small horizontal space between label and value */
+}
+
+.attributeText {
+    font-size: 14px;
+    color: #333;
+}
+
+.attributeLabelCust {
+    font-weight: bold;
+    font-size: 18px;
+    /* small horizontal space between label and value */
+}
+
+.attributeTextCust {
+    font-size: 18px;
+}
+
+/* Hover effect to enhance 3D feel */
+.custom3DButton:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+/* Pressed effect */
+.custom3DButton:active {
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transform: translateY(1px);
+}
+
+/*Trial of designing the view as per ISUZU */
+
+/* === PAGE BACKGROUND === */
+#page {
+    background-color: #f4f4f4;
+    color: #000;
+    font-family: "72", "Arial", sans-serif;
+}
+
+/* === SMART TABLE TOOLBAR === */
+.sapMOverflowToolbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0.5rem 1rem;
+}
+
+/* === SEARCH FIELD === */
+.sapMSFF {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    color: #000;
+    border-radius: 4px;
+}
+
+/* === EXPORT / SETTINGS ICON BUTTONS === */
+.sapMBtnInner {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.sapMBtn:hover .sapMBtnInner {
+    background-color: #e6e6e6;
+}
+
+/* === TABLE HEADER === */
+.sapMListTblHeaderCell,
+.sapMColumnHeader {
+    background-color: #f4f4f4;
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* === TABLE ROWS === */
+.sapMListTblRow {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sapMListTblRow:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.sapMListTblRow:hover {
+    background-color: #e9e9e9;
+}
+
+/* === TEXT COLUMNS === */
+.sapMText,
+.sapMLabel {
+    color: #000000;
+}
+
+/* === INFO TOOLBAR / ROW COUNT === */
+.sapMIBar.sapMTB.sapMTBStandard {
+    background-color: #ffffff;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* === SELECTED ROW === */
+.sapMLIBSelected {
+    background-color: #cce5ff !important;
+}
+
+/* === ZEBRA STRIPE ROWS === */
+.sapMListItems .sapMLIB:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* === HEADINGS (Title) === */
+.sapMTitle {
+    color: #e31b23 !important;
+    /* strong red */
+    font-weight: bold;
+}
+
+/* === STANDARD DROPDOWN LABEL === */
+.sapMSltLabel {
+    color: #e31b23 !important;
+}
+
+/* === LINK COLOR (Standard / Group Toggle) === */
+.sapMLnk,
+.sapMLnk:hover,
+.sapMLnk:active {
+    color: #e31b23 !important;
+    text-decoration: none;
+}
+
+/* === SELECTED TAB TEXT (Standard tab) === */
+.sapMITBSelected .sapMITBText {
+    color: #e31b23 !important;
+    font-weight: bold;
+}
+
+/* === FILTER & GO BUTTONS === */
+.sapMBtnInner {
+    color: #e31b23 !important;
+    border-color: #e31b23 !important;
+}
+
+.sapMBtn:hover .sapMBtnInner {
+    background-color: #ffe6e6 !important;
+}
+
+/* === SEARCH FIELD ICON === */
+.sapMSFF .sapMSFB {
+    color: #e31b23 !important;
+}
+
+/* === DATE RANGE PICKER ICON === */
+.sapMInputBaseIcon {
+    color: #e31b23 !important;
+}
+
+/* === ICON BUTTONS (Settings, Export, Fullscreen) === */
+.sapMBtn .sapUiIcon {
+    color: #e31b23 !important;
+}

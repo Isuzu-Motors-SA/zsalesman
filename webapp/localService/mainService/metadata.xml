@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZIR_SALESMAN_PRJ_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="SalesManData" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Zclient"/>
+                    <PropertyRef Name="Zdealer"/>
+                    <PropertyRef Name="Zidnum"/>
+                </Key>
+                <Property Name="Zclient" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="ZCLIENT" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zdealer" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="ZDEALER" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zidnum" Type="Edm.String" Nullable="false" MaxLength="13" sap:unicode="false" sap:label="ZIDNUM" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zname" Type="Edm.String" MaxLength="50" sap:unicode="false" sap:label="ZNAME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zdate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="ZDATE" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Zstatus" Type="Edm.String" MaxLength="1" sap:unicode="false" sap:label="ZSTATUS" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Mobile" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Mobile Phone" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Wphone" Type="Edm.String" MaxLength="30" sap:unicode="false" sap:label="Telephone" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Email" Type="Edm.String" MaxLength="241" sap:unicode="false" sap:label="E-Mail Address" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Search" Type="Edm.String" MaxLength="100" sap:unicode="false" sap:label="Search" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZIR_SALESMAN_PRJ_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="SalesManDataSet" EntityType="ZIR_SALESMAN_PRJ_SRV.SalesManData" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="http://stwdevvsdev05.internal.isuzu.co.za:8002/sap/opu/odata/sap/ZIR_SALESMAN_PRJ_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://stwdevvsdev05.internal.isuzu.co.za:8002/sap/opu/odata/sap/ZIR_SALESMAN_PRJ_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

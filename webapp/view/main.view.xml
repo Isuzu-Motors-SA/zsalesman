@@ -1,0 +1,128 @@
+<mvc:View
+    controllerName="isuzu.com.zsalesman.controller.main"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    xmlns:core="sap.ui.core"
+    xmlns:table="sap.ui.table"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+>
+    <f:Card
+        id="_IDGenCard1"
+        class="hoverEffect"
+    >
+        <f:header>
+            <card:Header
+                id="_IDGenHeader"
+                title="{i18n>SalesExecMaint}"
+                iconSrc="sap-icon://cancel-maintenance"
+            />
+        </f:header>
+        <f:content>
+            <ScrollContainer id="_IDGenScrollContainer">
+                <Table
+                    sticky="HeaderToolbar,ColumnHeaders"
+                    id="employeeTable"
+                    mode="MultiSelect"
+                    items="{/SalesManDataSet}"
+                >
+                    <headerToolbar>
+                        <OverflowToolbar id="_IDGenOverflowToolbar">
+                            <ToolbarSpacer id="_IDGenToolbarSpacer" />
+                            <SearchField
+                                id="_IDGenSearchField1"
+                                placeholder="Search..."
+                                liveChange="onSearch"
+                                width="20%"
+                            />
+                            <Button
+                                id="_IDGenButton"
+                                text="Add Employee"
+                                icon="sap-icon://add"
+                                type="Accept"
+                                press="onOpenAddDialog"
+                            />
+                            <Button
+                                id="_IDGenButton4"
+                                icon="sap-icon://excel-attachment"
+                                press="onExport"
+                            />
+                        </OverflowToolbar>
+                    </headerToolbar>
+                    <columns>
+                        <Column id="_IDGenColumn">
+                            <Text
+                                id="_IDGenText"
+                                text="{i18n>IDNumber}"
+                            />
+                        </Column>
+                        <Column id="_IDGenColumn1">
+                            <Text
+                                id="_IDGenText1"
+                                text="{i18n>Name}"
+                            />
+                        </Column>
+                        <Column id="_IDGenColumn2">
+                            <Text
+                                id="_IDGenText2"
+                                text="{i18n>Mobile}"
+                            />
+                        </Column>
+                        <Column id="_IDGenColumn3">
+                            <Text
+                                id="_IDGenText3"
+                                text="{i18n>WorkPhoneNo}"
+                            />
+                        </Column>
+                        <Column id="_IDGenColumn4">
+                            <Text
+                                id="_IDGenText4"
+                                text="{i18n>Email}"
+                            />
+                        </Column>
+                    </columns>
+                    <items>
+                        <ColumnListItem id="_IDGenColumnListItem">
+                            <cells>
+                                <Text
+                                    id="_IDGenText5"
+                                    text="{Zidnum}"
+                                />
+                                <Text
+                                    id="_IDGenText6"
+                                    text="{Zname}"
+                                />
+                                <Text
+                                    id="_IDGenText7"
+                                    text="{Mobile}"
+                                />
+                                <Text
+                                    id="_IDGenText8"
+                                    text="{Wphone}"
+                                />
+                                <Text
+                                    id="_IDGenText9"
+                                    text="{Email}"
+                                />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+                <HBox
+                    id="_IDGenHBox"
+                    justifyContent="End"
+                >
+                    <Button
+                        id="_IDGenButton1"
+                        text="Delete Employee"
+                        press="onDeleteSelected"
+                        icon="sap-icon://delete"
+                    />
+                </HBox>
+            </ScrollContainer>
+        </f:content>
+    </f:Card>
+</mvc:View>
